@@ -8,8 +8,7 @@ router.post('/users', async (req, res) => {
   try {
     const { username, email } = req.body;
 
-    // Validate the email format (You can use a library like 'validator' for this)
-    // For brevity, we skip the validation in this example
+   
 
     // Create a new user using the User model
     const newUser = await User.create({ username, email });
