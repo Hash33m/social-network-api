@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const User = require('./models/User');
-const Thought = require('./models/thought');
+const User = require('../models/users');
+const Thought = require('../models/thoughts');
 
 // Endpoint for user registration
 router.post('/users', async (req, res) => {
